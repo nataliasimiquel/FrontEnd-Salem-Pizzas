@@ -14,7 +14,7 @@
   --dark-900: #101026;
   --dark-700: #1D1D2E;
 
- --yellow-200: #e9d916;
+ --yellow-200: #dbb913;
   --gray-100: #8A8A8A;
   --green-900: #3fffa3;
   --red-900: #FF3F4B;
@@ -44,7 +44,7 @@ body, input, textarea, select, button{
   }
 }
 
-@media (max-width: 1080px){
+@media (min-width: 1080px){
   html{
     font-size: 93.75%; // vai gerar 15px;
   }
