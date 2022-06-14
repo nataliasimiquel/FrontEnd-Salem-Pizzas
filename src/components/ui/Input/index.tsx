@@ -1,5 +1,6 @@
 import { InputHTMLAttributes, TextareaHTMLAttributes } from 'react';
 import styles from '../../ui/Input/styles.module.scss'
+
 interface InputProps extends InputHTMLAttributes<HTMLInputElement>{}
 
 interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement>{}

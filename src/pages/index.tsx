@@ -8,30 +8,36 @@ import { Button } from "../components/ui/Button/index"
 
 export default function Home() {
   return (
-  <>
-  <Head>
-    <title>Salém pizza -  Faça seu login</title>
-  </Head>
-  <div className={styles.container}>
-    <Image src={salempizza} alt="Logo Salem Pizzaria" />
-    <div className={styles.login}>
-      <form>
-      <Input
-      placeholder="Digite seu email"
-      type="text"/>
-      <Input
-      placeholder="Sua Senha"
-      type="password"/>
+    <>
+    <Head>
+      <title>SujeitoPizza - Faça seu login</title> 
+    </Head>
+    <div className={styles.containerCenter}>
+      <Image src={salempizza} alt="Logo Salém Pizzaria" />
 
-      <Button
-      type="submit"
-      >
-        Acessar
-      </Button>
-      
-      </form>
+      <div className={styles.login}>
+        <form>
+          <Input
+            placeholder="Digite seu email"
+          />
+
+          <Input
+            placeholder="Sua senha"
+            type="password"
+          />
+          
+          <Button
+            type="submit"
+            loading={false}
+          >
+            Acessar
+          </Button>
+        </form>
+
+        <a className={styles.text}>Nao possui uma conta? Cadastre-se</a>
+
+      </div>
     </div>
-  </div>
-  </>
+    </>
   )
 }
